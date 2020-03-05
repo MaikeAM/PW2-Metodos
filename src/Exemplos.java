@@ -4,13 +4,20 @@ public class Exemplos {
 	private static Scanner in;
 
 	public static void main(String[] args) {
-       System.out.println("Digite o numero");
-		in = new Scanner( System.in );
-        int num = in.nextInt();
- 
-	        
-		ehMaiorIdade(30);
-		classificar(num);
+		/*
+		 * System.out.println("Digite o numero para classificar"); in = new Scanner(
+		 * System.in ); int num = in.nextInt();
+		 * 
+		 * System.out.println("Digite sua idade"); in = new Scanner( System.in ); int
+		 * idade = in.nextInt();
+		 */
+		
+		
+		  ehMaiorIdade(12); 
+		  classificar(12);
+
+		
+		
 	}
 
 	public static void ehMaiorIdade(int idade) {
@@ -25,12 +32,10 @@ public class Exemplos {
 	public static void classificar(int num) {
 		if (num > 0) {
 			System.out.println("Positivo");
+		} else if (num == 0) {
+			System.out.println("ZERO");
 		} else {
-			if (num == 0) {
-				System.out.println("ZERO");
-			} else {
-				System.out.println("Negativo");
-			}
+			System.out.println("Negativo");
 		}
 	}
 
